@@ -107,6 +107,8 @@ declare module ReactRouter {
 	 */
 	export class Router extends React.Component<IRouterProps, {}>{ }
 
+	export function withRouter<P extends IRouterContext, S>(wrappedComponent: React.ComponentClass<P>): React.ComponentClass<P>;
+
 	export interface ILinkProps extends React.HTMLAttributes {
 		/**
 		 * The path to link to, e.g. /users/123.
